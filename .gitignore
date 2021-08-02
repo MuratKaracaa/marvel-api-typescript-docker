@@ -1,0 +1,5 @@
+node_modules
+prettierrc.json
+test.ts
+tsconfig.json
+.env

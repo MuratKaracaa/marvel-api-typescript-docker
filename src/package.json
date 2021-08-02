@@ -1,0 +1,6 @@
+{
+    "name": "src",
+    "devDependencies": {
+        "@types/node-cron": "^2.0.4"
+    }
+}
