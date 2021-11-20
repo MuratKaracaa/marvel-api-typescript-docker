@@ -3,11 +3,8 @@ import { storiesAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await storiesAPI(req, res))
-router.get('/:storyID', async (req, res) => await storiesAPI(req, res))
-router.get(
-    '/:storyID/:category',
-    async (req, res) => await storiesAPI(req, res)
-)
+router.get('/', storiesAPI)
+router.get('/:storyID', storiesAPI)
+router.get('/:storyID/:category', storiesAPI)
 
 export default router

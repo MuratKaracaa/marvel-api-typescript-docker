@@ -3,11 +3,8 @@ import { creatorsAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await creatorsAPI(req, res))
-router.get('/:creatorID', async (req, res) => await creatorsAPI(req, res))
-router.get(
-    '/:creatorID/:category',
-    async (req, res) => await creatorsAPI(req, res)
-)
+router.get('/', creatorsAPI)
+router.get('/:creatorID', creatorsAPI)
+router.get('/:creatorID/:category', creatorsAPI)
 
 export default router

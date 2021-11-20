@@ -3,7 +3,6 @@ import { promisify } from 'util'
 
 const client = redis.createClient({
     port: 6379,
-    host: 'redis',
 })
 
 const getAsync = promisify(client.get).bind(client)

@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "axios": "^0.24.0",
         "cors": "^2.8.5",
         "crypto-js": "^4.0.0",
         "dotenv": "^9.0.2",

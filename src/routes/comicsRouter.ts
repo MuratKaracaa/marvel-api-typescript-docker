@@ -3,8 +3,8 @@ import { comicsAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await comicsAPI(req, res))
-router.get('/:comicID', async (req, res) => await comicsAPI(req, res))
-router.get('/:comicID/:category', async (req, res) => await comicsAPI(req, res))
+router.get('/', comicsAPI)
+router.get('/:comicID', comicsAPI)
+router.get('/:comicID/:category', comicsAPI)
 
 export default router

@@ -3,8 +3,8 @@ import { eventsAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await eventsAPI(req, res))
-router.get('/:eventID', async (req, res) => await eventsAPI(req, res))
-router.get('/:eventID/:category', async (req, res) => await eventsAPI(req, res))
+router.get('/', eventsAPI)
+router.get('/:eventID', eventsAPI)
+router.get('/:eventID/:category', eventsAPI)
 
 export default router

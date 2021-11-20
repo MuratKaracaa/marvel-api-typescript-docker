@@ -3,11 +3,8 @@ import { charactersAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await charactersAPI(req, res))
-router.get('/:characterID', async (req, res) => await charactersAPI(req, res))
-router.get(
-    '/:characterID/:category',
-    async (req, res) => await charactersAPI(req, res)
-)
+router.get('/', charactersAPI)
+router.get('/:characterID', charactersAPI)
+router.get('/:characterID/:category', charactersAPI)
 
 export default router

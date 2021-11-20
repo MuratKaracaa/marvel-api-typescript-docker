@@ -3,8 +3,8 @@ import { seriesAPI } from '../controllers'
 
 const router = express.Router()
 
-router.get('/', async (req, res) => await seriesAPI(req, res))
-router.get('/:serieID', async (req, res) => await seriesAPI(req, res))
-router.get('/:serieID/:category', async (req, res) => await seriesAPI(req, res))
+router.get('/', seriesAPI)
+router.get('/:serieID', seriesAPI)
+router.get('/:serieID/:category', seriesAPI)
 
 export default router
